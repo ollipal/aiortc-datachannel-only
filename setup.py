@@ -9,7 +9,7 @@ about_file = os.path.join(root_dir, "src", "aiortc", "about.py")
 with open(about_file, encoding="utf-8") as fp:
     exec(fp.read(), about)
 
-readme_file = os.path.join(root_dir, "README.rst")
+readme_file = os.path.join(root_dir, "README.md")
 with open(readme_file, encoding="utf-8") as f:
     long_description = f.read()
 
@@ -27,6 +27,8 @@ extras_require = {
         'aiohttp>=3.7.0',
         'coverage>=5.0',
         'numpy>=1.19.0',
+        'twine',
+        'wheel',
     ]
 }
 
@@ -35,6 +37,7 @@ setuptools.setup(
     version=about["__version__"],
     description=about["__summary__"],
     long_description=long_description,
+    long_description_content_type='text/markdown',
     url=about["__uri__"],
     author=about["__author__"],
     author_email=about["__email__"],
