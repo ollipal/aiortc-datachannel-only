@@ -38,8 +38,8 @@
         <option value='{"ordered": false, "maxPacketLifetime": 500}'>Unordered, 500ms lifetime</option>
     </select>
 </div>
-<div class="option">
-    <input id="use-audio" checked="checked" type="checkbox"/>
+<div class="option" style="display: none">
+    <input id="use-audio" type="checkbox"/>
     <label for="use-audio">Use audio</label>
     <select id="audio-codec">
         <option value="default" selected>Default codecs</option>
@@ -48,7 +48,7 @@
         <option value="PCMA/8000">PCMA</option>
     </select>
 </div>
-<div class="option">
+<div class="option" style="display: none">
     <input id="use-video" type="checkbox"/>
     <label for="use-video">Use video</label>
     <select id="video-resolution">
@@ -71,7 +71,7 @@
     </select>
 </div>
 <div class="option">
-    <input id="use-stun" type="checkbox"/>
+    <input id="use-stun" checked="checked" type="checkbox"/>
     <label for="use-stun">Use STUN server</label>
 </div>
 
