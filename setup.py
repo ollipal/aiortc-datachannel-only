@@ -14,7 +14,7 @@ with open(readme_file, encoding="utf-8") as f:
     long_description = f.read()
 
 install_requires = [
-    "aioice-no-netifaces>=0.7.7post1",
+    "aioice-no-netifaces>=0.7.7post2",
     "cryptography>=2.2",
     'dataclasses; python_version < "3.7"',
     "google-crc32c>=1.1",
